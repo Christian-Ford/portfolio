@@ -157,10 +157,14 @@ body {
 .navLinks a {
   padding: 10px;
   text-decoration: none;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
   color: #e9d000;
 }
 .navLinks a:hover {
-  transition: ease-in-out;
-  transition-duration: 0.5s;
+  font-size: 18px;
   color: #998200;
+  text-decoration: underline;
+  text-decoration-color: #998200;
+  text-decoration-line: underline;
 }

@@ -1,15 +1,18 @@
-import React from 'react'
+import React from 'react';
+
+
 
 const Navbar = () => {
+
     return (
         <div className="navbarWrap">
-            <a href="#about-me" className="navLogo"> CF.Dev </a>
+            <a href="#home" className="navLogo"> CF.Dev </a>
 
-            <div className="navLinks">
-                
-                <a href="#projects"> Projects </a>
-                <a href="#skills"> Skills </a>
-                <a href="#resume"> Resume </a>
+            <div id="navActive" className="navLinks">
+                <a href="#home" className="links"> Home </a>
+                <a href="#projects" className="links"> Projects </a>
+                <a href="#skills" className="links"> Skills </a>
+                <a href="#resume" className="links"> Resume </a>
             </div>
         </div>
     )
