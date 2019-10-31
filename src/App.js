@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from './components/Navbar.jsx';
 import CallToAction from './components/CallToAction.jsx';
+import Projects from './components/Projects.jsx';
 
 import './css/index.css';
 
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <CallToAction />
+      <Projects />
     </div>
   );
 }
