@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ProjectCard from './projects/ProjectCard.jsx';
+import ProjectCard from './ProjectCard.jsx';
 
 const projectsList = [
     {
@@ -13,7 +13,7 @@ const projectsList = [
 
     } ,
     {
-        name: 'project 2' ,
+        name: 'project 1' ,
         pic: 'img/blank/blank' ,
         description: 'lorem ipsum' ,
         github: 'www.github.com' ,
@@ -22,7 +22,7 @@ const projectsList = [
 
     } ,
     {
-        name: 'project 3' ,
+        name: 'project 1' ,
         pic: 'img/blank/blank' ,
         description: 'lorem ipsum' ,
         github: 'www.github.com' ,
@@ -58,6 +58,7 @@ const projectsList = [
 
     } ,
    
+   
 ]
 
 export default class Projects extends Component {
@@ -67,9 +68,12 @@ export default class Projects extends Component {
                 { projectsList.map(project => {
                     return (
                     <ProjectCard 
+                    className="projectCard"
                     name = {project.name}
                     description = {project.description}
                     github = {project.github}
+                    trello = {project.trello}
+                    liveLink = {project.liveLink}
                     />
                      )
                 })}
