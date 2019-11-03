@@ -9,12 +9,26 @@ import React from 'react';
 
 const ProjectCard = (props) => {
     return (
-        <div className="cardWrapper">   
-            <h1 className="projectName"> {props.name}</h1>
-            <p className="projectDescription"> {props.description}</p>
-            <a className="projectGithub"> {props.github} </a>
-            <a className="projectTrello"> {props.trello}</a>
-            <button> <a className="projectLiveLink"> {props.liveLink} </a></button>
+        <div className="cardWrapper"> 
+
+            <div className="sectionOne">  
+                <div className="main">
+                    <h1 className="projectName"> {props.name}</h1>
+                    <p className="projectDescription"> {props.description}</p>
+                </div>
+
+                <div className="screenshot">
+                    
+                    <img className="thePic" src={props.pic}></img>
+                </div>
+            </div>
+
+
+            <div className="refLinks">
+            <a className="indLink" href={props.github} target="_blank"> Git Hub </a> 
+            <a className="indLink" href={props.trello} target="_blank"> Trello </a> 
+            <a className="indLink" href={props.liveLink} target="_blank"> Live </a> 
+            </div>
         </div>
     )
 }
